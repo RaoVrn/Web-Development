@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to XYZ Club</h1>
+    <h2>Contact Us Form</h2>
+
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" placeholder="Enter Your Name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" placeholder="Enter Your Email"></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact Number</label></td>
+                <td><input type="number" name="contact_number" id="contact" placeholder="Enter your Number"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <select name="Gender" id="gender">
+                        <option value="">--Please choose your gender--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date Of Birth</label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="resume">Upload your Resume</label></td>
+                <td><input type="file" name="resume" id="resume"></td>
+            </tr>
+            <tr>
+                <td><label for="message">Enter Your Message</label></td>
+                <td><textarea name="message" id="message" placeholder="Enter Your Message"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Send">
+                    <input type="submit" value="Reset">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-top: 10px;">
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2xl" style="color: #ff0000;"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2xl" style="color: #903a92;"></i></a>
+                    <a href="https://www.telegram.com"><i class="fa-brands fa-telegram fa-2xl" style="color: #589fd5;"></i></a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
