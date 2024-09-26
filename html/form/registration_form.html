@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- Full Name Field -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Phone Number Field -->
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+
+            <!-- Date of Birth Field -->
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Address Field -->
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address here" required></textarea><br><br>
+        </fieldset>
+
+        <!-- Account Information Section -->
+        <fieldset>
+            <legend>Account Information</legend>
+            
+            <!-- Username Field -->
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Confirm Password Field -->
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+            <!-- Upload Profile Picture Field -->
+            <label for="profile_pic">Upload Profile Picture:</label><br>
+            <input type="file" id="profile_pic" name="profile_pic" accept="image/*"><br><br>
+        </fieldset>
+
+        <!-- Preferences Section -->
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <!-- Subscription Preference -->
+            <label for="subscription">Would you like to receive our newsletter?</label><br>
+            <input type="radio" id="yes" name="subscription" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="subscription" value="no" checked>
+            <label for="no">No</label><br><br>
+
+            <!-- Preferred Contact Method -->
+            <label for="contact_method">Preferred Contact Method:</label><br>
+            <select id="contact_method" name="contact_method">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="text">Text Message</option>
+            </select><br><br>
+
+            <!-- Number of Devices Field -->
+            <label for="devices">How many devices do you use for browsing?</label><br>
+            <input type="number" id="devices" name="devices" min="1" max="10" value="1"><br><br>
+        </fieldset>
+
+        <!-- Agree to Terms Checkbox -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
