@@ -1,0 +1,12 @@
+/* Default styles for the button */
+.active-button {
+    padding: 10px 20px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+/* When the button is clicked (active), change the background color */
+.active-button:active {
+    background-color: darkgray;
+}
