@@ -1,0 +1,6 @@
+/* Style only the first letter of the paragraph */
+.first-letter-paragraph::first-letter {
+    font-size: 2em;
+    color: darkred;
+    font-weight: bold;
+}
