@@ -1,0 +1,9 @@
+/* Style the second list item */
+li:nth-child(2) {
+    color: blue;
+}
+
+/* Style every odd-numbered list item */
+li:nth-child(odd) {
+    background-color: lightgray;
+}
