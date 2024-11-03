@@ -1,0 +1,16 @@
+/* Select and style all h1 elements */
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+/* Select and style all p elements */
+p {
+    font-size: 16px;
+    color: green;
+}
+
+/* Select and style p elements inside a div */
+div p {
+    color: red;
+}

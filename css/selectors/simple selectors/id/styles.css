@@ -1,0 +1,41 @@
+/* ID selector for the main header */
+#main-header {
+    font-size: 40px;
+    color: darkblue;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+/* ID selector for the 'About Me' section */
+#about-me {
+    font-size: 18px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ID selector for the 'Featured Project' section */
+#featured-project {
+    font-size: 18px;
+    background-color: #dfefff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ID selector for the footer */
+#page-footer {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
