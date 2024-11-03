@@ -1,0 +1,10 @@
+/* Default styles for the link */
+.visited-link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* When the link has been visited, change the color */
+.visited-link:visited {
+    color: purple;
+}
