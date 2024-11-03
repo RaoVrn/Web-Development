@@ -1,0 +1,11 @@
+/* Default styles for the link */
+.hover-link {
+    color: black;
+    text-decoration: none;
+}
+
+/* When the link is hovered, change the color and add underline */
+.hover-link:hover {
+    color: red;
+    text-decoration: underline;
+}
