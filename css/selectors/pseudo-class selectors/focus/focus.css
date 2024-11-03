@@ -1,0 +1,11 @@
+/* Default styles for the input field */
+.focus-input {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* When the input field is focused, change the border color */
+.focus-input:focus {
+    border-color: blue;
+    outline: none; /* Remove the default outline */
+}
