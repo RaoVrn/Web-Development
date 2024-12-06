@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for Alignment */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* General Box Styles */
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  
+  /* Outer Box */
+  .outer-box {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 10px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .outer-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Middle Box */
+  .middle-box {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border: 8px solid rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .middle-box:hover {
+    transform: rotate(-10deg);
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Inner Box */
+  .inner-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(173, 216, 230, 0.9);
+    color: black;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    animation: inner-box-animation 3s infinite;
+  }
+  
+  /* Animation for Inner Box */
+  @keyframes inner-box-animation {
+    0% {
+      transform: scale(1);
+      background-color: rgba(173, 216, 230, 0.9);
+    }
+    50% {
+      transform: scale(1.2);
+      background-color: rgba(135, 206, 250, 0.9);
+    }
+    100% {
+      transform: scale(1);
+      background-color: rgba(173, 216, 230, 0.9);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .outer-box {
+      width: 250px;
+      height: 250px;
+    }
+    .middle-box {
+      width: 150px;
+      height: 150px;
+    }
+    .inner-box {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

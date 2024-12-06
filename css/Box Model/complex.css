@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .box {
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    border: 3px solid;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .box1 {
+    background-color: lightgreen;
+    border-color: green;
+  }
+  
+  .box2 {
+    background-color: lightpink;
+    border-color: red;
+  }
+  
+  .box3 {
+    background-color: lightyellow;
+    border-color: gold;
+  }
+  
