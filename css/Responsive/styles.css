@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header,
+  .nav,
+  .main,
+  .footer {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Color Coding for Sections */
+  .header { background: #3b82f6; }
+  .nav { background: #22c55e; }
+  .content { background: #f97316; }
+  .sidebar { background: #10b981; }
+  .footer { background: #ef4444; }
+  
+  /* Viewport Units for Height and Width */
+  .header {
+    height: 10vh; /* 10% of viewport height */
+  }
+  
+  .footer {
+    height: 15vh; /* 15% of viewport height */
+  }
+  
+  /* Flexbox for Main Layout */
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .content {
+    flex: 3; /* Take 3 parts of the space */
+  }
+  
+  .sidebar {
+    flex: 1; /* Take 1 part of the space */
+  }
+  
+  /* CSS Grid for Entire Page */
+  body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* Header, Nav, Main, Footer */
+    grid-template-columns: 1fr;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .header {
+    grid-row: 1;
+  }
+  
+  .nav {
+    grid-row: 2;
+  }
+  
+  .main {
+    grid-row: 3;
+    display: flex;
+  }
+  
+  .footer {
+    grid-row: 4;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column; /* Stack content and sidebar vertically */
+    }
+  
+    .content,
+    .sidebar {
+      flex: none; /* Remove Flex Scaling */
+      width: 100%; /* Full width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      grid-template-rows: auto 1fr auto; /* Combine Header and Nav */
+    }
+  
+    .header {
+      grid-row: 1 / 2;
+    }
+  
+    .nav {
+      display: none; /* Hide Nav for Small Screens */
+    }
+  }
+  
