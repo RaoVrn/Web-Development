@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f1f5f9;
+  }
+  
+  .fancy-border {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    padding: 10px 20px;
+    color: #1e293b;
+    border: 2px solid #1e293b; /* Solid border */
+    border-radius: 8px; /* Rounded corners */
+    text-transform: uppercase; /* All caps */
+    letter-spacing: 3px; /* Spaced letters */
+  }
+  
