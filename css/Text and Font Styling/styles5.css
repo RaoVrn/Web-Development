@@ -1,0 +1,35 @@
+/* General Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #101820; /* Deep dark background */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Masked Text Styling */
+  .masked-text {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url('https://source.unsplash.com/800x600/?nature,abstract') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the text transparent */
+    transition: transform 0.5s ease-in-out, letter-spacing 0.5s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover Effect */
+  .masked-text:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    letter-spacing: 10px; /* Adds more spacing */
+  }
+  
