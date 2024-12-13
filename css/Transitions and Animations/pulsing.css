@@ -1,0 +1,12 @@
+.move-box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: relative;
+    animation: move 2s infinite;
+  }
+  @keyframes move {
+    0% { left: 0; }
+    50% { left: 100px; }
+    100% { left: 0; }
+  }
