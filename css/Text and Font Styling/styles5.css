@@ -31,5 +31,4 @@ body {
   .masked-text:hover {
     transform: scale(1.1); /* Slight zoom effect */
     letter-spacing: 10px; /* Adds more spacing */
-  }
-  
+  }   
