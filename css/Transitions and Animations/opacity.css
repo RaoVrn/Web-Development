@@ -1,0 +1,10 @@
+.fade-box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  .fade-box:hover {
+    opacity: 0.5;
+  }
