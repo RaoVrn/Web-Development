@@ -1,0 +1,11 @@
+.shape {
+    width: 150px;
+    height: 150px;
+    margin: 100px auto;
+    background: #ff5722;
+    animation: morph 3s infinite ease-in-out;
+  }
+  @keyframes morph {
+    0%, 100% { border-radius: 0%; }
+    50% { border-radius: 50%; }
+  }
