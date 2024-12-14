@@ -1,0 +1,17 @@
+.typing {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 20ch;
+    border-right: 2px solid;
+    animation: typing 4s steps(20) infinite, blink 0.5s step-end infinite alternate;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 20ch; }
+  }
+  @keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: black; }
+  }
