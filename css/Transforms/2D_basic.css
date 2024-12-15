@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .rotate {
+    transform: rotate(45deg); /* Rotates 45 degrees */
+  }
+
+  .scale {
+    transform: scale(1.5); /* Enlarges the element by 1.5 times */
+  }
+
+  .translate {
+    transform: translate(50px, 20px); /* Moves element 50px right and 20px down */
+  }
+
+  .skew {
+    transform: skew(20deg, 10deg); /* Skews element 20 degrees horizontally and 10 degrees vertically */
+  }
