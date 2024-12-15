@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .card:hover {
+    transform: rotate(20deg) scale(1.2) translate(20px, 10px) skew(15deg, 10deg);
+    background: linear-gradient(to bottom right, #ff7eb3, #ff758c);
+    color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Animation Keyframes */
+  @keyframes moveInCircle {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(50px, 0) rotate(45deg);
+    }
+    50% {
+      transform: translate(50px, 50px) rotate(90deg);
+    }
+    75% {
+      transform: translate(0, 50px) rotate(135deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(180deg);
+    }
+  }
+
+  .animated {
+    animation: moveInCircle 3s infinite alternate ease-in-out;
+  }
