@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    perspective: 800px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .box:hover {
+    transform: rotateY(180deg);
+  }
