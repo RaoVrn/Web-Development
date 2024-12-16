@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transform: perspective(500px) rotateX(45deg);
+  }
