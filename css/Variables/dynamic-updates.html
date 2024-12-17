@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CSS Variables</title>
+    <style>
+        :root {
+            --bg-color: lightblue;
+            --text-color: black;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic CSS Variables</h1>
+    <button onclick="changeTheme('dark')">Dark Theme</button>
+    <button onclick="changeTheme('light')">Light Theme</button>
+
+    <script>
+        function changeTheme(theme) {
+            if (theme === 'dark') {
+                document.documentElement.style.setProperty('--bg-color', '#333');
+                document.documentElement.style.setProperty('--text-color', '#fff');
+            } else {
+                document.documentElement.style.setProperty('--bg-color', 'lightblue');
+                document.documentElement.style.setProperty('--text-color', 'black');
+            }
+        }
+    </script>
+</body>
+</html>
