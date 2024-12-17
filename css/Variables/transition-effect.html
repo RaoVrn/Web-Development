@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable Transitions</title>
+    <style>
+        :root {
+            --bg-color: #ff6f61;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s ease;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeColor()">Change Background</button>
+
+    <script>
+        function changeColor() {
+            const root = document.documentElement;
+            const newColor = root.style.getPropertyValue('--bg-color') === '#ff6f61' ? '#61a8ff' : '#ff6f61';
+            root.style.setProperty('--bg-color', newColor);
+        }
+    </script>
+</body>
+</html>
