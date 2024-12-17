@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --main-bg-color: #f0f8ff;
+            --main-text-color: #333;
+        }
+
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: var(--main-text-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>Using CSS Variables</h1>
+    <p>The background and text colors are set using CSS variables.</p>
+</body>
+</html>
