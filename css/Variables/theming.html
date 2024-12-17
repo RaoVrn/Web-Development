@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theming with CSS Variables</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --font-size: 16px;
+        }
+
+        body {
+            font-size: var(--font-size);
+            color: var(--primary-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.secondary {
+            background-color: var(--secondary-color);
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Themed Buttons</h1>
+    <button>Primary Button</button>
+    <button class="secondary">Secondary Button</button>
+</body>
+</html>
