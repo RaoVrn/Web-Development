@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient with CSS Variables</title>
+    <style>
+        :root {
+            --start-color: #ff7eb3;
+            --end-color: #8b5cf6;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, var(--start-color), var(--end-color));
+        }
+
+        h1 {
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Gradient with Variables</h1>
+</body>
+</html>
