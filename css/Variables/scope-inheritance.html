@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Scope</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .parent {
+            --primary-color: #28a745; /* Overriding variable within scope */
+            color: var(--primary-color);
+        }
+
+        .child {
+            color: var(--primary-color); /* Inherits overridden variable */
+        }
+
+        .outside {
+            color: var(--secondary-color); /* Falls back to :root scope */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent Element (Green Color)
+        <div class="child">Child Element (Inherits Green)</div>
+    </div>
+    <div class="outside">Outside Element (Gray Color)</div>
+</body>
+</html>
