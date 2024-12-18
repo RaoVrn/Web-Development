@@ -1,0 +1,36 @@
+@media print {
+    /* Page Margins */
+    @page {
+      margin: 1in 0.5in;
+    }
+  
+    /* Typography and Layout */
+    body {
+      font-size: 14pt;
+      line-height: 1.5;
+      color: black;
+      background: none;
+    }
+  
+    /* Sections and Breaks */
+    .title-page {
+      break-before: page;
+      text-align: center;
+      font-size: 20pt;
+    }
+  
+    .content-section {
+      break-after: page;
+    }
+  
+    /* Avoid Breaks in Lists and Tables */
+    ul li, table {
+      break-inside: avoid;
+    }
+  
+    /* Hide Non-Essential Elements */
+    .ad-banner, nav, .social-links {
+      display: none;
+    }
+  }
+  
