@@ -1,0 +1,32 @@
+@media print {
+    /* General Styling */
+    body {
+      font-family: 'Times New Roman', serif;
+      font-size: 12pt;
+      margin: 1in;
+    }
+  
+    /* Table Formatting */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      break-inside: avoid;
+    }
+  
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  
+    /* Link Display */
+    a:after {
+      content: " (" attr(href) ")";
+      color: gray;
+    }
+  
+    /* Hide Elements */
+    .no-print, button, input {
+      display: none;
+    }
+  }
+  
