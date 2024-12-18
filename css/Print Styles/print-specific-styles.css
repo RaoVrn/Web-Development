@@ -1,0 +1,11 @@
+@media print {
+  body {
+    font-size: 12pt;
+    color: black;
+    background-color: white;
+  }
+
+  .no-print {
+    display: none;
+  }
+}
