@@ -1,0 +1,38 @@
+@media print {
+    /* General Layout */
+    body {
+      font-size: 14pt;
+      color: black;
+      background: none !important;
+    }
+  
+    .header, .footer {
+      position: fixed;
+      width: 100%;
+      color: gray;
+      text-align: center;
+    }
+  
+    .header {
+      top: 0;
+    }
+  
+    .footer {
+      bottom: 0;
+    }
+  
+    /* Page Breaks */
+    .chapter {
+      break-before: page;
+    }
+  
+    .no-break {
+      break-inside: avoid;
+    }
+  
+    /* Remove Unnecessary Elements */
+    nav, .sidebar, .ad-banner {
+      display: none;
+    }
+  }
+  
