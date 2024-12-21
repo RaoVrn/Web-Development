@@ -1,0 +1,31 @@
+<div class="flex flex-col items-center space-y-4 p-6">
+    <!-- Card -->
+    <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+      <img class="w-full" src="https://via.placeholder.com/300" alt="Sample">
+      <div class="p-6">
+        <h2 class="text-xl font-bold text-gray-800">Advanced Card</h2>
+        <p class="text-gray-600">This card displays an advanced Tailwind CSS design with hover effects and modal integration.</p>
+        <button onclick="openModal()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Open Modal</button>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+    <div id="tailwind-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 hidden flex justify-center items-center">
+      <div class="bg-white rounded-lg p-6 shadow-lg">
+        <h3 class="text-lg font-bold">Modal Title</h3>
+        <p class="text-gray-600">This is a Tailwind CSS modal example.</p>
+        <button onclick="closeModal()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">Close</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function openModal() {
+      document.getElementById("tailwind-modal").classList.remove("hidden");
+    }
+  
+    function closeModal() {
+      document.getElementById("tailwind-modal").classList.add("hidden");
+    }
+  </script>
+  
