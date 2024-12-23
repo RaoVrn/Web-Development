@@ -1,0 +1,7 @@
+/* Logical Properties */
+.container {
+    margin-inline: auto; /* Centers horizontally */
+    padding-block: 10px 20px; /* Top and bottom padding */
+    border-inline: 2px solid #333; /* Left and right borders */
+  }
+  
