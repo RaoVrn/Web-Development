@@ -1,0 +1,12 @@
+/* Content Visibility and Lazy Loading */
+.content {
+    content-visibility: auto; /* Render only visible content */
+    contain-intrinsic-size: 300px; /* Placeholder size for lazy loading */
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    loading: lazy; /* Lazy load images */
+  }
+  
