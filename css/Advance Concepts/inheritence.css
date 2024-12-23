@@ -1,0 +1,14 @@
+/* Inheritance and Default Styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  p {
+    color: gray;
+  }
+  
+  h1, h2 {
+    font-family: inherit; /* Inherit from body */
+    color: inherit; /* Inherit color from body */
+  }
+  
