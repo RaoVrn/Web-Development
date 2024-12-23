@@ -1,0 +1,14 @@
+/* Cascading and Specificity */
+body {
+    font-family: Arial, sans-serif;
+    color: black; /* Base color */
+  }
+  
+  p {
+    color: blue; /* More specific selector overrides body */
+  }
+  
+  div p {
+    color: red; /* Most specific, overrides previous */
+  }
+  
