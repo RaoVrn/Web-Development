@@ -1,0 +1,13 @@
+/* CSS Preprocessors (SASS Example) */
+$primary-color: #3498db;
+$padding: 20px;
+
+.container {
+  padding: $padding;
+  background-color: $primary-color;
+
+  .nested {
+    margin: $padding / 2;
+    color: lighten($primary-color, 20%);
+  }
+}
