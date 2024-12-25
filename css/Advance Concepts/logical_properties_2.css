@@ -1,0 +1,8 @@
+/* Logical Properties Example */
+.container {
+    margin-inline: auto; /* Horizontal centering */
+    padding-block: 20px; /* Top and bottom padding */
+    border-inline: 1px solid #333; /* Borders on left and right */
+    text-align: start; /* Logical start (left in LTR, right in RTL) */
+  }
+  
