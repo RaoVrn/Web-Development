@@ -1,0 +1,22 @@
+/* SASS Example */
+$primary-color: #4caf50;
+$secondary-color: #f44336;
+$padding: 10px;
+
+.container {
+  padding: $padding;
+  background-color: $primary-color;
+
+  h1 {
+    color: $secondary-color;
+    margin-bottom: $padding;
+  }
+
+  .button {
+    background: lighten($primary-color, 10%);
+    padding: $padding / 2;
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+}
