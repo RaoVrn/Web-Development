@@ -1,0 +1,14 @@
+/* Basic Cascading Example */
+body {
+    font-family: Arial, sans-serif;
+    color: black; /* General rule */
+  }
+  
+  p {
+    color: blue; /* More specific rule */
+  }
+  
+  div p {
+    color: red; /* Most specific rule */
+  }
+  
