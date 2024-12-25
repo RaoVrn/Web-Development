@@ -1,0 +1,15 @@
+/* Inheritance Example */
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: black; /* Inherited by child elements */
+  }
+  
+  p {
+    font-size: 16px; /* Does not inherit unless specified */
+  }
+  
+  h1 {
+    font-family: inherit; /* Explicitly inherit font-family */
+    color: inherit; /* Explicitly inherit color */
+  }
+  
