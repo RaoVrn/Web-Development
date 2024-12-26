@@ -1,0 +1,12 @@
+/* Simplify targeting multiple elements */
+:is(h1, h2, h3) {
+    color: #3f51b5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Add low specificity styles */
+  :where(nav, footer) a {
+    text-decoration: none;
+    color: #757575;
+  }
+  
