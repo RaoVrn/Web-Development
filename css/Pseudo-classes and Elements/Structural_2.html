@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #e9e9e9;
+    }
+
+    li:not(.highlight) {
+      color: #757575;
+    }
+
+    p:first-of-type {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <p>This is the first paragraph.</p>
+  <p>This is another paragraph.</p>
+
+  <ul>
+    <li>Item 1</li>
+    <li class="highlight">Highlighted Item</li>
+    <li>Item 3</li>
+  </ul>
+
+  <table border="1">
+    <tr><td>Row 1</td></tr>
+    <tr><td>Row 2</td></tr>
+    <tr><td>Row 3</td></tr>
+  </table>
+</body>
+</html>
