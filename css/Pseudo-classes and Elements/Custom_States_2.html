@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* Apply the same styles to all headings */
+    :is(h1, h2, h3) {
+      font-family: Arial, sans-serif;
+      color: #3a3a3a;
+      margin-bottom: 10px;
+    }
+
+    /* Add styles to low specificity elements */
+    :where(nav, footer) a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    :where(nav, footer) a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <h2>About Us</h2>
+  <h3>Contact Information</h3>
+
+  <nav>
+    <a href="#">Home</a> | 
+    <a href="#">Services</a>
+  </nav>
+
+  <footer>
+    <a href="#">Privacy Policy</a>
+  </footer>
+</body>
+</html>
