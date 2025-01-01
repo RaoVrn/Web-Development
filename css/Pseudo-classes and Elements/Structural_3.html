@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    ul li:nth-child(odd) {
+      background-color: #f4f4f4;
+    }
+
+    ul li:nth-child(even) {
+      background-color: #e0e0e0;
+    }
+
+    ul li:not(.special) {
+      color: #555;
+    }
+
+    ul li:last-of-type {
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li class="special">Special Item</li>
+    <li>Item 3</li>
+    <li>Last Item</li>
+  </ul>
+</body>
+</html>
