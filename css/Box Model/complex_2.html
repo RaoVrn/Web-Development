@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Modal Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f4f6;
+    }
+
+    /* Modal overlay */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+    }
+
+    /* Modal box */
+    .modal-box {
+      background-color: white;
+      width: 400px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Button */
+    .open-modal-btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to open modal -->
+  <button class="open-modal-btn" onclick="openModal()">Open Modal</button>
+
+  <!-- Modal -->
+  <div id="modal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="close-btn" onclick="closeModal()">✕</button>
+      <h2 class="modal-title">Dynamic Modal Content</h2>
+      <p>This is a dynamic modal box! You can add any content here, such as forms, images, or additional components.</p>
+      <p>Click outside the modal or press the ✕ button to close it.</p>
+    </div>
+  </div>
+
+  <script>
+    // Open modal function
+    function openModal() {
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    // Close modal function
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('modal')) {
+        closeModal();
+      }
+    }
+  </script>
+
+</body>
+</html>
