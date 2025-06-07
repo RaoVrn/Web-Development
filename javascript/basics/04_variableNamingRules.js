@@ -26,11 +26,13 @@ Difficulty: 🟢 Beginner
 */
 
 // valid names
-let username = "Varun";
+let userName = "Varun";
 let $balance = 1000000;
 let _score = 99;
 let totalMarks = 100;
 let age1 = 20;
+
+console.log(userName, $balance, _score, totalMarks, age1);
 
 // invalid names
 
