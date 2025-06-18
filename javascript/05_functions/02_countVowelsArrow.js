@@ -1,14 +1,17 @@
 /*
-📘 Question 2: Count Vowels (Arrow Function)
+📘 Question: Count Vowels (Arrow Function)
 
 Task:
-Create an arrow function that takes a string and returns the number of vowels.
+Write an arrow function that returns the number of vowels in a string.
+
+Example:
+Input: "javascript"
+Output: 3
 
 Topics Covered:
-- Arrow Functions
+- Arrow functions
 - Strings
-- Loops
-- Conditionals
+- Array methods
 
 Difficulty: 🟢 Beginner
 */

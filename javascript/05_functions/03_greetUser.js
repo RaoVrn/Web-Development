@@ -1,8 +1,12 @@
 /*
-📘 Question 3: Greet a User
+📘 Question: Greet User
 
 Task:
-Write a function that takes a user's name as input and prints "Hello, [name]!"
+Write a function that takes a user's name as a parameter and prints a personalized greeting message.
+
+Example:
+Input: "Varun"
+Output: "Hello, Varun!"
 
 Topics Covered:
 - Functions

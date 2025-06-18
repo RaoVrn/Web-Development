@@ -1,9 +1,13 @@
 /*
-📘 Question 1: Count Vowels in a String
+📘 Question: Count Vowels in a String
 
 Task:
-Create a function using the "function" keyword that takes a string as an argument 
-and returns the number of vowels (a, e, i, o, u) in the string.
+Write a function using the `function` keyword that takes a string as input and returns 
+the number of vowels (a, e, i, o, u) present in the string.
+
+Example:
+Input: "hello"
+Output: 2
 
 Topics Covered:
 - Functions
