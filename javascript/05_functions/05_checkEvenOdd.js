@@ -26,4 +26,4 @@ const evenOdd = (num) => {
 	}
 }
 
-console.log(evenOdd(num));
+evenOdd(num);
